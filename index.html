@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Club Registration</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    	body{
+    		background-color: #4A9EFA ;
+    	}
+    </style>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+<div class="container-fluid">
+<a class="navbar-brand" href="#"><img src="robot.fif" width="50px" class="rounded-circle"></a>
+
+<div class="collapse navbar-collapse">
+
+<ul class="navbar-nav me-auto">
+<li class="nav-item"> <a class="nav-link" href="index.html"> Page 1</li>
+<li class="nav-item"> <a class="nav-link" href="page2.html"> Page 2</li>
+<li class="nav-item"> <a class="nav-link" href="page3.html"> Page 3</li>
+</ul>
+
+<form class="d-flex">
+<input class="form-control" type="text" placeholder="Search">
+<button class="btn btn-info" type="button">Search</button>
+
+
+</form>
+
+</div>
+
+
+</div>
+
+
+
+</nav>
+
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-10">
+                <h2 class="text-center mb-4">Robotics Club Registration</h2>
+                <form>
+
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Enter full name" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="education" class="form-label">Educational Background</label>
+                        <input type="text" class="form-control" id="education" placeholder="e.g., Computer Science, Engineering" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="skills" class="form-label">Skills</label>
+                        <select class="form-select" id="skills" multiple required>
+                            <option value="programming">Programming</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="mechanical">Mechanical Design</option>
+                            <option value="ai-ml">AI/ML</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <small class="text-muted">Hold Ctrl (Windows) or Command (Mac) to select multiple options.</small>
+                    </div>
+                    
+                    <fieldset class="mb-3">
+                        <legend class="col-form-label">Experience Level</legend>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experience" id="beginner" value="beginner" required>
+                            <label class="form-check-label" for="beginner">Beginner</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experience" id="intermediate" value="intermediate">
+                            <label class="form-check-label" for="intermediate">Intermediate</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="experience" id="advanced" value="advanced">
+                            <label class="form-check-label" for="advanced">Advanced</label>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="mb-3">
+                        <label for="whyJoin" class="form-label">Why do you want to join the Robotics Club?</label>
+                        <textarea class="form-control" id="whyJoin" rows="3" placeholder="Share your interest and goals..." required></textarea>
+                    </div>
+                    
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="terms" required>
+                        <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
